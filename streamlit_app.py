@@ -40,8 +40,8 @@ try:
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     # outputs pandas DF
     streamlit.dataframe(fruityvice_normalized)
-  except URLError as e:
-    streamlit.error()
+except URLError as e:
+  streamlit.error()
     
 
 # dont run anything pasthere while we troubleshoot
